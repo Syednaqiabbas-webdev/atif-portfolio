@@ -1,8 +1,52 @@
-# React + Vite
+Atif Khan's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my portfolio website! This project is currently under development and aims to showcase my skills and work as a frontend developer.
 
-Currently, two official plugins are available:
+🚀 Features (Planned)
+Responsive Design: Optimized for various devices and screen sizes.
+Interactive Animations: Utilizing Framer Motion for smooth animations.
+Custom Styling: Tailwind CSS for a modern, utility-first approach to styling.
+Showcase Projects: Displaying a selection of my work and projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Technologies Used
+React: For building dynamic and interactive user interfaces.
+Framer Motion: For advanced animations and transitions.
+Tailwind CSS: For utility-first CSS styling.
+
+🏗 Getting Started
+To get a local copy of the project up and running, follow these steps:
+
+1. Clone the repository:
+git clone https://github.com/atifkhan045/portfolio.git
+
+2. Navigate to the project directory:
+cd portfolio
+
+3. Install dependencies: 
+npm install
+
+4. Start the development server:
+
+npm start
+
+
+The local development server will run at http://localhost:3000.
+
+🚧 Development Status
+
+This project is currently under development. The following features are planned and will be implemented in the upcoming updates:
+
+Completing the portfolio sections and content.
+Finalizing animations and styling.
+Deploying the live version.
+
+📝 Contributing
+
+Feel free to contribute to the development of this project! Fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+
+🔗 Contact
+If you have any questions or feedback, you can reach out to me:
+
+LinkedIn: https://www.linkedin.com/in/atif-khan45/
+Twitter: @AtifKhan_45
+Email: atif04011@gmail.com
