@@ -2,6 +2,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import HamburgerIcon from "./HamburgerIcon"; // Import the custom icon
+import logo from "../assets/aklogo.svg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -68,41 +69,40 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="flex items-center justify-between px-6 py-6 cursor-progress">
-        <div className="flex items-center justify-center gap-4 text-2xl">
-          {navIcons.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Link to ${item.href}`}
-            >
-              {item.icon}
-            </a>
-          ))}
+      <nav className="flex items-center justify-between px-6 py-4 cursor-pointer fixed top-0 left-0 w-full  z-50">
+        {/* Left: Logo */}
+        <div className="p-0 m-0">
+          <img
+            src={logo}
+            alt="Logo of Portfolio"
+            className=" w-32 max-h-24 max-w-32"
+            loading="lazy"
+          />
         </div>
 
+        {/* Center: Navigation Links */}
         <div className="hidden md:flex items-center justify-center gap-6 text-lg text-pretty font-bold tracking-wider">
           {navItems.map((item) => (
-            <ul>
-            <li key={item.href} className="group">
-              <a
-                href={item.href}
-                className="hover:text-navbarCustom duration-700 relative"
-              >
-                {item.text}
-                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-navbarCustom scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-              </a>
-            </li>
+            <ul key={item.href}>
+              <li className="group">
+                <a
+                  href={item.href}
+                  className="hover:text-navbarCustom duration-700 relative"
+                >
+                  {item.text}
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-navbarCustom scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                </a>
+              </li>
             </ul>
           ))}
         </div>
 
-        <div className="block md:hidden z-10">
+        {/* Right: Hamburger Menu for Mobile */}
+        <div className="block md:hidden mr-10 z-10">
           <HamburgerIcon toggleMenu={toggleMenu} isOpen={open} />
         </div>
 
+        {/* Mobile Menu */}
         <AnimatePresence>
           {open && (
             <motion.div
@@ -110,12 +110,21 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="md:hidden fixed left-0 top-0 w-full origin-top h-screen bg-neutral-950 p-8"
+              className="md:hidden fixed left-0 top-0 w-full origin-top h-screen"
+              style={{
+                backgroundImage:
+                  "linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% )",
+              }}
             >
+              <div className="">
+                  <img
+                    src={logo}
+                    alt="Logo of Portfolio"
+                    className="absolute top-5 w-32 max-h-24 max-w-32"
+                    loading="lazy"
+                  />
+                </div>
               <div className="flex h-full flex-col">
-                
-                  <h1 className="font-bold">Atif's Portfolio</h1>
-                
                 <motion.div
                   variants={mobileLinkVars}
                   className="text-4xl font-bold font-sans"
@@ -145,6 +154,9 @@ const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Right: Extra Content */}
+        <div className="hidden md:block">ababab</div>
       </nav>
     </header>
   );
