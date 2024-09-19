@@ -62,22 +62,27 @@ const Navbar = () => {
   ];
 
   const navIcons = [
-    { href: "https://www.linkedin.com/in/atif-khan45/", icon: <FaLinkedin /> },
-    { href: "https://github.com/atifkhan045", icon: <FaGithub /> },
-    { href: "https://x.com/AtifKhan_45", icon: <FaTwitter /> },
+    { href: "https://www.linkedin.com/in/atif-khan45/", icon: <FaLinkedin />, color: '#0A66C2' },
+    { href: "https://github.com/atifkhan045", icon: <FaGithub />, color: '#F0F0F0' },
+    { href: "https://x.com/AtifKhan_45", icon: <FaTwitter />, color : '#1DA1F2' },
   ];
 
   return (
     <header>
       <nav className="flex items-center justify-between px-6 py-4 cursor-pointer fixed top-0 left-0 w-full  z-50">
-        {/* Left: Logo */}
         <div className="p-0 m-0">
-          <img
-            src={logo}
-            alt="Logo of Portfolio"
-            className=" w-32 max-h-24 max-w-32"
-            loading="lazy"
-          />
+        <div className='flex justify-center items-center'>
+        {
+           
+            navIcons.map((icon,index) => (
+               <span key={index} className='text-3xl mx-2 ' style={{color: icon.color}}>
+                 <a href={icon.href} className=''>
+                    {icon.icon}
+                    </a>
+               </span>
+            ))
+        }
+         </div>
         </div>
 
         {/* Center: Navigation Links */}
@@ -98,7 +103,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Hamburger Menu for Mobile */}
-        <div className="block md:hidden mr-10 z-10">
+        <div className="block mt-4 md:hidden mr-10 z-10">
           <HamburgerIcon toggleMenu={toggleMenu} isOpen={open} />
         </div>
 
@@ -120,7 +125,7 @@ const Navbar = () => {
                   <img
                     src={logo}
                     alt="Logo of Portfolio"
-                    className="absolute top-5 w-32 max-h-24 max-w-32"
+                    className="absolute top-0 w-32 max-h-24 max-w-32"
                     loading="lazy"
                   />
                 </div>
@@ -155,8 +160,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
 
-        {/* Right: Extra Content */}
-        <div className="hidden md:block">ababab</div>
+      
       </nav>
     </header>
   );
