@@ -1,6 +1,5 @@
 import myImage from "../assets/myImage.png";
 import { motion } from "framer-motion";
-import './roundImage.css'
 
 const Hero = () => {
   const container = (delay) => ({
@@ -10,7 +9,7 @@ const Hero = () => {
 
   return (
     <div className="border-b border-neutral-900">
-      <div className="flex items-center flex-col-reverse lg:flex-row">
+      <div className="flex items-center flex-col-reverse lg:flex-row lg:gap-24">
       
 
         {/* Text section */}
@@ -88,19 +87,17 @@ const Hero = () => {
           </div>
         </div>
          {/* Image section */}
-         <div className="lg:w-1/2  md:w-4/6 sm:w-4/5">
-          <div className="flex items-center justify-cen">
-            <motion.img
+        <div className="p-[5rem] lg:w-1/2  md:w-4/6 sm:w-4/5 flex items-center justify-cen">
+          <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
               src={myImage}
               alt="Atif khan image"
-              className="w-full round " // Adjust size here
-            />
-          </div>
+              className="w-full  rounded-[55rem]"
+              // Adjust size here
+          />
         </div>
-        
       </div>
     </div>
   );
