@@ -6,6 +6,7 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 
+
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>
@@ -16,7 +17,7 @@ const App = () => {
       </div>
 
       {/* Navbar fixed */}
-      <div className="navbar fixed top-0 left-0 w-full z-50" >
+      <div className="navbar fixed top-0  w-full z-50" >
         <Navbar />
       </div>
 
