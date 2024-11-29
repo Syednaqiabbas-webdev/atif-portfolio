@@ -75,14 +75,14 @@ const Contacts = () => {
           <IoMdMail />
         </span>
         <span className="lg:text-2xl md:text-xl ">Email</span>
-        <span>atif04011@gmail.com</span>
+        <span>naqiabbas.webdev@gmail.com</span>
       </div>
       <div className="phone outer-shadow rounded-2xl flex flex-col items-center lg:py-4 md:py-3 xs:py-2 mb-4">
         <span className="lg:text-2xl md:text-xl py-2">
           <FaSquarePhone />
         </span>
         <span className="lg:text-2xl md:text-xl ">Phone</span>
-        <span>+91 9554343760</span>
+        <span>+91 917013055</span>
       </div>
       <div className="address outer-shadow rounded-2xl flex flex-col items-center lg:py-4 md:py-3 xs:py-2 mb-4">
         <span className="lg:text-2xl md:text-xl py-2">

@@ -62,9 +62,9 @@ const Navbar = () => {
   ];
 
   const navIcons = [
-    { href: "https://www.linkedin.com/in/atif-khan45/", icon: <FaLinkedin />, color: '#0A66C2' },
-    { href: "https://github.com/atifkhan045", icon: <FaGithub />, color: '#F0F0F0' },
-    { href: "https://x.com/AtifKhan_45", icon: <FaTwitter />, color : '#1DA1F2' },
+    { href: "https://www.linkedin.com/in/syed-naqi-abbas-52400221a/", icon: <FaLinkedin />, color: '#0A66C2' },
+    { href: "https://github.com/Syednaqiabbas-webdev", icon: <FaGithub />, color: '#F0F0F0' },
+    { href: "https://x.com/SyedNaqi_Abbas", icon: <FaTwitter />, color : '#1DA1F2' },
   ];
 
   return (

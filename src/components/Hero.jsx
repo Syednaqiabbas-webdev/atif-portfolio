@@ -30,7 +30,7 @@ const Hero = () => {
               >
                 👋
               </span>{" "}
-              <br /> I'm <span>Atif Khan</span>
+              <br /> I'm <span>Syed Naqi Abbas</span>
             </motion.h1>
 
             <motion.p

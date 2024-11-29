@@ -70,7 +70,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Delhi, India",
-  phoneNo: "+91 9554343760",
-  email: "atif04011@gmail.com",
+  address: "Azamgarh, India",
+  phoneNo: "+91 9170133055",
+  email: "naqiabbas.webdev@gmail.com",
 };

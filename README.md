@@ -1,4 +1,4 @@
-Atif Khan's Portfolio Website
+Syed Naqi Abbas Khan's Portfolio Website
 
 Welcome to the repository for my portfolio website! This project is currently under development and aims to showcase my skills and work as a frontend developer.
 
@@ -17,7 +17,7 @@ Tailwind CSS: For utility-first CSS styling.
 To get a local copy of the project up and running, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/atifkhan045/portfolio.git
+git clone https://github.com/Syednaqiabbas-webdev
 
 2. Navigate to the project directory:
 cd portfolio
@@ -30,7 +30,7 @@ npm install
 npm start
 
 
-The local development server will run at http://localhost:3000.
+The local development server will run at http://localhost:5500.
 
 🚧 Development Status
 
@@ -47,6 +47,6 @@ Feel free to contribute to the development of this project! Fork the repository 
 🔗 Contact
 If you have any questions or feedback, you can reach out to me:
 
-LinkedIn: https://www.linkedin.com/in/atif-khan45/
-Twitter: @AtifKhan_45
-Email: atif04011@gmail.com
+LinkedIn: https://www.linkedin.com/in/syed-naqi-abbas-52400221a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+Twitter: @SyedNaqi_Abbas
+Email: naqiabbas.webdev@gmail.com
